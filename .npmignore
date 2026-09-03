@@ -1,0 +1,6 @@
+test/
+scripts/
+docs/
+.github/
+.editorconfig
+.env.example

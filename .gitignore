@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+d1porter-output/
+.d1porter-*/
+.wrangler/
+.DS_Store
+
+*.tgz

@@ -1,0 +1,42 @@
+name: Bug report
+about: Report a reproducible problem using synthetic data only
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, project references, production schemas, dumps, bundle files, logs containing identifiers, or real row data.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Provide generalized DDL and commands with placeholder identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Data-safety confirmation
+      options:
+        - label: I verified that this report contains only synthetic data and no credentials or private identifiers.
+          required: true

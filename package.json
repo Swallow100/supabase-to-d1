@@ -1,0 +1,58 @@
+{
+  "name": "supabase-to-d1",
+  "version": "0.1.0",
+  "description": "A privacy-conscious CLI that plans and exports PostgreSQL or Supabase tables to Cloudflare D1-compatible SQL.",
+  "type": "module",
+  "bin": {
+    "supabase-to-d1": "bin/supabase-to-d1.js",
+    "d1porter": "bin/supabase-to-d1.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md",
+    "README.ja.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node scripts/check-syntax.mjs",
+    "test": "node --test test/*.test.js",
+    "test:integration": "node --test test/exporter.test.js",
+    "public-safety": "node scripts/public-safety-check.mjs",
+    "pack:check": "npm pack --dry-run",
+    "ci": "npm run check && npm test && npm run public-safety && npm run pack:check",
+    "prepack": "npm run check && npm test && npm run public-safety"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "supabase",
+    "cloudflare",
+    "d1",
+    "postgresql",
+    "postgres",
+    "sqlite",
+    "migration",
+    "database",
+    "cli"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swallow100/supabase-to-d1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Swallow100/supabase-to-d1/issues"
+  },
+  "homepage": "https://github.com/Swallow100/supabase-to-d1#readme",
+  "funding": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Swallow100",
+  "sideEffects": false
+}

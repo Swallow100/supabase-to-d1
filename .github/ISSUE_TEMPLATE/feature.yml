@@ -1,0 +1,26 @@
+name: Feature request
+about: Propose a conservative migration capability
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Migration problem
+      description: Describe the PostgreSQL feature and D1 behavior using synthetic examples only.
+    validations:
+      required: true
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Proposed semantics and safety behavior
+      description: Explain when the tool should convert, warn, or block.
+    validations:
+      required: true
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Data-safety confirmation
+      options:
+        - label: I verified that this request contains only synthetic data and no credentials or private identifiers.
+          required: true

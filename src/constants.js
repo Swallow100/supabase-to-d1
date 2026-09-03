@@ -1,0 +1,16 @@
+export const PACKAGE_NAME = "supabase-to-d1";
+export const CLI_NAME = "d1porter";
+export const VERSION = "0.1.0";
+export const MANIFEST_VERSION = 1;
+export const DEFAULT_OUTPUT_DIR = "d1porter-output";
+export const DEFAULT_URL_ENV = "SUPABASE_DB_URL";
+export const FALLBACK_URL_ENV = "DATABASE_URL";
+export const DEFAULT_SCHEMA = "public";
+export const DEFAULT_MAX_FILE_MB = 4500;
+export const D1_MAX_COLUMNS = 100;
+export const D1_MAX_STATEMENT_BYTES = 100_000;
+export const SAFE_STATEMENT_BYTES = 90_000;
+export const D1_MAX_IMPORT_BYTES = 5 * 1024 * 1024 * 1024;
+export const MAX_SAFE_JS_INTEGER = 9_007_199_254_740_991n;
+export const MIN_SQLITE_INTEGER = -9_223_372_036_854_775_808n;
+export const MAX_SQLITE_INTEGER = 9_223_372_036_854_775_807n;
